@@ -1,0 +1,10 @@
+version: "3"
+services:
+  noetic-planning-demo:
+    build: .
+    volumes:
+      - .:/root/ros_ws/src/noetic_planning_demo
+    environment:
+      - DISPLAY=host.docker.internal:0.0
+    privileged: true
+    tty: true
